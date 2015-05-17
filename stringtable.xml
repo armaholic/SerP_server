@@ -350,6 +350,22 @@
 		Вы не уполномочены управлять этой техникой!
 		</Russian>
 	</Key>
+	<Key ID="STR_SerP_UnauthorisedPlace">
+		<Original>
+		This place you are not available!
+		</Original>
+		<Russian>
+		Вам не доступно это место!
+		</Russian>
+	</Key>
+	<Key ID="STR_SerP_UnauthorisedSide">
+		<Original>
+		Not available your side!
+		</Original>
+		<Russian>
+		Недоступно для вашей стороны!
+		</Russian>
+	</Key>
 <!-- сообщения при завершении миссии -->
 	<Key ID="STR_SerP_winCall">
 		<Russian>
