@@ -1,0 +1,1 @@
+isClass(missionConfigFile >> "SerP_const")&&getText(missionConfigFile >> 'SerP_version')=='addon'
