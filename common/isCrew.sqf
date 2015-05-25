@@ -48,7 +48,7 @@ fnc_CrewControl = {
 			_index=_veh getCargoIndex player;
 		};
 		sleep 1;
-		_move = (player == driver _veh && {_typeIn in [0,2,3,5]})
+		_move = ((player == driver _veh || player == _veh turretUnit [0]) && {_typein in [0,2,3,5]})
 		|| {(player == gunner _veh && {_typeIn in [1,2,4,5]})}
 		|| {(player == commander _veh && {_typeIn in [3,4,5,6]})};
 		// если переменая _move активна то запускаем возврат игрока на предыдущее место.
