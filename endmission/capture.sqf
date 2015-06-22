@@ -50,13 +50,13 @@ while {_loop} do {
 
 	switch true do {
 		case (_currentCapturer==civilian&&_capturer!=civilian): {
-			["Р—РѕРЅР° РЅРµР№С‚СЂР°Р»СЊРЅР°"] call SerP_msg;
+			["Зона нейтральна"] call SerP_msg;
 			_capturer = civilian;
 			_startTime = diag_ticktime;
 		};
 		case (_currentCapturer==civilian&&_capturer==civilian): {};
 		case (_sidesInZone==1&&_capturer!=_currentCapturer): {
-			[format ["%1 РєРѕРЅС‚СЂРѕР»РёСЂСѓСЋС‚ Р·РѕРЅСѓ",_currentCapturer]] call SerP_msg;
+			[format ["%1 контролируют зону",_currentCapturer]] call SerP_msg;
 			_startTime = diag_ticktime;
 			_capturer = _currentCapturer;
 			_counter = 0;
@@ -66,17 +66,17 @@ while {_loop} do {
 				_currentCapturer call _winCallback;
 				_loop = false;
 			} else {
-				[format ["%1 Р·Р°С…РІР°С‚РёР»Рё Р·РѕРЅСѓ",_currentCapturer]] call SerP_endmission;
+				[format ["%1 захватили зону",_currentCapturer]] call SerP_endmission;
 			}
 		};
 		case (_currentCapturer!=_defender&&_sidesInZone==1&&_capturer==_currentCapturer&&diag_ticktime>_startTime+_counter*60): {
 			_min = round((_captureTime-_counter*60)/60);
 			_end = switch (true) do {
-				case (_min==1): {"Р°"};
-				case (_min<5): {"С‹"};
+				case (_min==1): {"а"};
+				case (_min<5): {"ы"};
 				default {""};
 			};
-			[format ["Р”Рѕ Р·Р°С…РІР°С‚Р° Р·РѕРЅС‹ СЃС‚РѕСЂРѕРЅРѕР№ %1 РѕСЃС‚Р°Р»РѕСЃСЊ %2 РјРёРЅСѓС‚%3",_currentCapturer,_min,_end]] call SerP_msg;
+			[format ["До захвата зоны стороной %1 осталось %2 минут%3",_currentCapturer,_min,_end]] call SerP_msg;
 			_counter = _counter+1;
 		};
 		default {};

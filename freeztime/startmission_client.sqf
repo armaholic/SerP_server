@@ -4,13 +4,6 @@ waitUntil{player==player};
 setViewDistance SerP_viewDistance;
 if (count(playableUnits)==0||!alive(player)) exitWith {};//костыль для запуска в синглплеерном редакторе
 
-if ((SerP_loading==0)&&(time<60)&&(player != leader group player)&&!(serverCommandAvailable "#kick")&&(({isPlayer _x} count playableUnits)>120)) exitWith {
-	failMission "loser";
-};
-if ((SerP_loading==2)&&(time<60)&&!((player == leader group player)||(serverCommandAvailable "#kick"))) exitWith {
-	failMission "loser";
-};
-
 sleep .1;
 waitUntil{!isNil {findDisplay 46}};
 _veh = (vehicle player);
