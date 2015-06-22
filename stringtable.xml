@@ -352,7 +352,7 @@
 	</Key>
 	<Key ID="STR_SerP_UnauthorisedPlace">
 		<Original>
-		This place you are not available!
+		This place is not available for you!
 		</Original>
 		<Russian>
 		Вам не доступно это место!
@@ -360,7 +360,7 @@
 	</Key>
 	<Key ID="STR_SerP_UnauthorisedSide">
 		<Original>
-		Not available your side!
+		Not available for your side!
 		</Original>
 		<Russian>
 		Недоступно для вашей стороны!
@@ -468,7 +468,7 @@
 		<Russian>Вкл/выкл строит. режим(0)</Russian>
 	</Key> 
  	<Key ID="STR_DBS_SIMAllowance">
-		<Original>Give Building Allowance(9)</Original>
+		<Original>Give Building Permission(9)</Original>
 		<Russian>Дать разреш. на строит.(9)</Russian>
 	</Key> 
     </Container>
