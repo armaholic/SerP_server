@@ -3,8 +3,6 @@ SerP_trashArray = [];
 SerP_planeList = [];
 _bCounter = {
 	_briefingTime = (_this select 0);
-	diag_log "_bCounter";
-	diag_log _briefingTime;
 	SerP_warbegins = 0;publicVariable "SerP_warbegins";
 	waitUntil{
 		[["SerP_freeztimeCounter",["", format [localize "STR_SerP_freeztimeCounter",_briefingTime]]]] call SerP_notification;
@@ -15,9 +13,6 @@ _bCounter = {
 	};
 	SerP_warbegins = 1;publicVariable "SerP_warbegins";
 };
-
-
-if (isNil "paramsArray") then {SerP_briefingMode = 1} else {SerP_briefingMode = "briefing_mode" call BIS_fnc_getParamValue}; //костыль для версии 1.44, bn_
 
 switch (SerP_briefingMode) do	{
 	case 0:	{

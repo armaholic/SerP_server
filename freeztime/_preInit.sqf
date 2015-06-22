@@ -105,11 +105,11 @@ SerP_getTeleportList = {//[_zones, _zoneSelector]
 						_x setVariable ["SerP_startPos",_newPos,true];
 					};
 					if (_x == leader(group _x)) then {
-						[_zoneSide,["SerP_startposMarker"+str(group _x),_newPos,"mil_start",[1,1],str(group _x),"ColorGreen",1,"SOLID","ICON"]] call SerP_addMarker; //РёСЃРїСЂР°РІРёР» РєР»Р°СЃСЃ РјР°СЂРєРµСЂР° - bn_
+						[_zoneSide,["SerP_startposMarker"+str(group _x),_newPos,"mil_start",[1,1],str(group _x),"ColorGreen",1,"SOLID","ICON"]] call SerP_addMarker; //исправил класс маркера - bn_
 					};
 				} forEach _units;
 				{
-					if (((_x distance _zonePos)<SerP_hintzonesize+_size)&&locked(_x)<2) then {		// Р±С‹Р»Рѕ:  &&!locked(_x)
+					if (((_x distance _zonePos)<SerP_hintzonesize+_size)&&locked(_x)<2) then {		// было:  &&!locked(_x)
 						_unitpos = getPosASL _x;
 						_diff = [((_unitpos select 0) - (_zonePos select 0)),((_unitpos select 1) - (_zonePos select 1)),0];
 						_newPos = [((_newZonePos select 0)+(_diff select 0)),((_newZonePos select 1)+(_diff select 1)),0];
