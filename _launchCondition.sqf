@@ -1,1 +1,1 @@
-isClass(missionConfigFile >> "SerP_const")&&getText(missionConfigFile >> 'SerP_version')=='addon'
+isClass(missionConfigFile >> "SerP_const") && getText(missionConfigFile >> 'SerP_version')=='addon'

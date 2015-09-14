@@ -1,4 +1,6 @@
 
+SerP_isCrew = compile preprocessFileLineNumbers "SerP\common\isCrew.sqf";
+
 call compile preprocessFileLineNumbers "SerP\common\markers.sqf";
 call compile preprocessFileLineNumbers "SerP\common\message.sqf";
 

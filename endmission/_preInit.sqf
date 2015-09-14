@@ -62,7 +62,7 @@ SerP_endMission = {
 		case "end_admin": {localize "STR_SerP_missionEndAdmin"};
 		default {_title};
 	};
-	tu_log_mission_message = [_title];
+	tu_log_mission_message pushback _title;
 	[_title] call SerP_processorEND;
 	tu_log_endMission = true;
 };

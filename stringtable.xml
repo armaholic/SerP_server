@@ -1,497 +1,485 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project ID="Arma2">
-  <Package ID="Missions">
-    <Container ID="SerP">
-<!-- заголовки в заметках -->
-	<Key ID="STR_SerP_groups_title">
-		<Original>
-		Отряды
-		</Original>
-	</Key>
-	<Key ID="STR_SerP_credits_title">
-		<Original>
-		Авторы
-		</Original>
-	</Key>
-	<Key ID="STR_SerP_situation_title">
-		<Original>
-		Общее положение дел
-		</Original>
-	</Key>
-	<Key ID="STR_SerP_task_title">
-		<Original>
-		Поставленная задача
-		</Original>
-	</Key>
-	<Key ID="STR_SerP_execution_title">
-		<Original>
-		Исполнение
-		</Original>
-	</Key>
-	<Key ID="STR_SerP_machinery_title">
-		<Original>
-		Техника и вооружение
-		</Original>
-	</Key>
-	<Key ID="STR_SerP_enemy_title">
-		<Original>
-		Противник
-		</Original>
-	</Key>
-	<Key ID="STR_SerP_convent_title">
-		<Original>
-		Условности
-		</Original>
-	</Key>
-<!-- Строки ниже используются платформой. Навряд-ли понадобится там что-то менять. -->
-<!-- Опции в лобби: погода, время суток, брифинг ингейм. -->
-	<Key ID="STR_SerP_timeOfDay">
-		<Original>
-		Time of Day
-		</Original>
-		<Russian>
-		Время суток
-		</Russian>
-	</Key>
-	<Key ID="STR_SerP_timeOfDay_Option0">
-		<Original>
-		Dawn
-		</Original>
-		<Russian>
-		Рассвет
-		</Russian>
-	</Key>
-	<Key ID="STR_SerP_timeOfDay_Option1">
-		<Original>
-		Early Morning
-		</Original>
-		<Russian>
-		Раннее утро
-		</Russian>
-	</Key>
-	<Key ID="STR_SerP_timeOfDay_Option2">
-		<Original>
-		Morning
-		</Original>
-		<Russian>
-		Утро
-		</Russian>
-	</Key>
-	<Key ID="STR_SerP_timeOfDay_Option3">
-		<Original>
-		Noon
-		</Original>
-		<Russian>
-		Полдень
-		</Russian>
-	</Key>
-	<Key ID="STR_SerP_timeOfDay_Option4">
-		<Original>
-		Afternoon
-		</Original>
-		<Russian>
-		Середина дня
-		</Russian>
-	</Key>
-	<Key ID="STR_SerP_timeOfDay_Option5">
-		<Original>
-		Evening
-		</Original>
-		<Russian>
-		Вечер
-		</Russian>
-	</Key>
-	<Key ID="STR_SerP_timeOfDay_Option6">
-		<Original>
-		Dusk
-		</Original>
-		<Russian>
-		Сумерки
-		</Russian>
-	</Key>
-	<Key ID="STR_SerP_timeOfDay_Option7">
-		<Original>
-		Night
-		</Original>
-		<Russian>
-		Ночь
-		</Russian>
-	</Key>
-	<Key ID="STR_SerP_timeOfDay_Option8">
-		<Original>
-		Default
-		</Original>
-		<Russian>
-		По настройкам карты
-		</Russian>
-	</Key>
-	<Key ID="STR_SerP_viewdistance">
-		<Original>
-		Viewdistance
-		</Original>
-		<Russian>
-		Дальность видимости
-		</Russian>
-	</Key>
-	<Key ID="STR_SerP_weather">
-		<Original>
-		Weather
-		</Original>
-		<Russian>
-		Погода
-		</Russian>
-	</Key>
-	<Key ID="STR_SerP_weather_Option0">
-		<Original>
-		Clear
-		</Original>
-		<Russian>
-		Безоблачно
-		</Russian>
-	</Key>
-	<Key ID="STR_SerP_weather_Option1">
-		<Original>
-		Overcast
-		</Original>
-		<Russian>
-		Облачно
-		</Russian>
-	</Key>
-	<Key ID="STR_SerP_weather_Option2">
-		<Original>
-		Light Fog
-		</Original>
-		<Russian>
-		Туман
-		</Russian>
-	</Key>
-	<Key ID="STR_SerP_weather_Option3">
-		<Original>
-		Heavy Fog
-		</Original>
-  		<Russian>
-		Густой туман
-		</Russian>
-	</Key>
-	<Key ID="STR_SerP_weather_Option4">
-		<Original>
-		Storm
-		</Original>
-		<Russian>
-		Гроза
-		</Russian>
-	</Key>
-	<Key ID="STR_SerP_weather_Option5">
-		<Original>
-		Default
-		</Original>
-		<Russian>
-		По настройкам карты
-		</Russian>
-	</Key>
-	<Key ID="STR_SerP_briefing_mode">
-		<Original>
-		Briefing ingame
-		</Original>
-		<Russian>
-		Брифинг ингейм
-		</Russian>
-	</Key>
-	<Key ID="STR_SerP_briefing_mode_Option0">
-		<Original>
-		Without briefing
-		</Original>
-		<Russian>
-		Без брифинга
-		</Russian>
-	</Key>
-	<Key ID="STR_SerP_briefing_mode_Option1">
-		<Original>
-		7 min
-		</Original>
-		<Russian>
-		7 минут
-		</Russian>
-	</Key>
-	<Key ID="STR_SerP_briefing_mode_Option2">
-		<Original>
-		10 min
-		</Original>
-		<Russian>
-		10 минут
-		</Russian>
-	</Key>
-	<Key ID="STR_SerP_briefing_mode_Option3">
-		<Original>
-		15 min
-		</Original>
-		<Russian>
-		15 минут
-		</Russian>
-	</Key>
-	<Key ID="STR_SerP_briefing_mode_Option4">
-		<Original>
-		No limit
-		</Original>
-		<Russian>
-		По готовности
-		</Russian>
-	</Key>
-	<Key ID="STR_SerP_loading">
-		<Original>
-		Loading
-		</Original>
-		<Russian>
-		Вход в игру
-		</Russian>
-	</Key>
-	<Key ID="STR_SerP_loading_Option0">
-		<Original>
-		Auto
-		</Original>
-		<Russian>
-		Авто
-		</Russian>
-	</Key>
-	<Key ID="STR_SerP_loading_Option1">
-		<Original>
-		Any
-		</Original>
-		<Russian>
-		Без ограничений
-		</Russian>
-	</Key>
-	<Key ID="STR_SerP_loading_Option2">
-		<Original>
-		Only group leaders
-		</Original>
-		<Russian>
-		Только командиры групп
-		</Russian>
-	</Key>
-	<Key ID="STR_SerP_endBriefing">
-		<Original>
-		End briefing
-		</Original>
-		<Russian>
-		Закончить брифинг
-		</Russian>
-	</Key>
-	<Key ID="STR_SerP_continueBriefing">
-		<Original>
-		Сontinue briefing
-		</Original>
-		<Russian>
-		Продолжить брифинг
-		</Russian>
-	</Key>
-	<Key ID="STR_SerP_outOfZone">
-		<Original>
-		You're leaving zone of briefing
-		</Original>
-		<Russian>
-		Вы покидаете зону брифинга
-		</Russian>
-	</Key>
-	<Key ID="STR_SerP_sorry">
-		<Original>
-		Sorry
-		</Original>
-		<Russian>
-		Мне очень жаль
-		</Russian>
-	</Key>
-	<Key ID="STR_SerP_endMission">
-		<Original>
-		End mission
-		</Original>
-		<Russian>
-		Завершение игры
-		</Russian>
-	</Key>
-	<Key ID="STR_SerP_On">
-		<Original>
-		ON
-		</Original>
-		<Russian>
-		Вкл.
-		</Russian>
-	</Key>
-	<Key ID="STR_SerP_Off">
-		<Original>
-		Off
-		</Original>
-		<Russian>
-		Выкл.
-		</Russian>
-	</Key>
-	<Key ID="STR_SerP_spectatorLimitations">
-		<Original>
-		Spectator limitations
-		</Original>
-		<Russian>
-		Ограничения спектатора
-		</Russian>
-	</Key>
-	<Key ID="STR_SerP_debug">
-		<Original>
-		Debug
-		</Original>
-		<Russian>
-		Отладка
-		</Russian>
-	</Key>
+	<Package ID="Missions">
+		<Container ID="SerP">
+			<!-- заголовки в заметках -->
+			<Key ID="STR_SerP_groups_title">
+				<Original>
+					Отряды
+				</Original>
+			</Key>
+			<Key ID="STR_SerP_credits_title">
+				<Original>
+					Авторы
+				</Original>
+			</Key>
+			<Key ID="STR_SerP_situation_title">
+				<Original>
+					Общее положение дел
+				</Original>
+			</Key>
+			<Key ID="STR_SerP_task_title">
+				<Original>
+					Поставленная задача
+				</Original>
+			</Key>
+			<Key ID="STR_SerP_execution_title">
+				<Original>
+					Исполнение
+				</Original>
+			</Key>
+			<Key ID="STR_SerP_machinery_title">
+				<Original>
+					Техника и вооружение
+				</Original>
+			</Key>
+			<Key ID="STR_SerP_enemy_title">
+				<Original>
+					Противник
+				</Original>
+			</Key>
+			<Key ID="STR_SerP_convent_title">
+				<Original>
+					Условности
+				</Original>
+			</Key>
+			<!-- Строки ниже используются платформой. Навряд-ли понадобится там что-то менять. -->
+			<!-- Опции в лобби: погода, время суток, брифинг ингейм. -->
+			<Key ID="STR_SerP_timeOfDay">
+				<Original>
+					Time of Day
+				</Original>
+				<Russian>
+					Время суток
+				</Russian>
+			</Key>
+			<Key ID="STR_SerP_timeOfDay_Option0">
+				<Original>
+					Dawn
+				</Original>
+				<Russian>
+					Рассвет
+				</Russian>
+			</Key>
+			<Key ID="STR_SerP_timeOfDay_Option1">
+				<Original>
+					Early Morning
+				</Original>
+				<Russian>
+					Раннее утро
+				</Russian>
+			</Key>
+			<Key ID="STR_SerP_timeOfDay_Option2">
+				<Original>
+					Morning
+				</Original>
+				<Russian>
+					Утро
+				</Russian>
+			</Key>
+			<Key ID="STR_SerP_timeOfDay_Option3">
+				<Original>
+					Noon
+				</Original>
+				<Russian>
+					Полдень
+				</Russian>
+			</Key>
+			<Key ID="STR_SerP_timeOfDay_Option4">
+				<Original>
+					Afternoon
+				</Original>
+				<Russian>
+					Середина дня
+				</Russian>
+			</Key>
+			<Key ID="STR_SerP_timeOfDay_Option5">
+				<Original>
+					Evening
+				</Original>
+				<Russian>
+					Вечер
+				</Russian>
+			</Key>
+			<Key ID="STR_SerP_timeOfDay_Option6">
+				<Original>
+					Dusk
+				</Original>
+				<Russian>
+					Сумерки
+				</Russian>
+			</Key>
+			<Key ID="STR_SerP_timeOfDay_Option7">
+				<Original>
+					Night
+				</Original>
+				<Russian>
+					Ночь
+				</Russian>
+			</Key>
+			<Key ID="STR_SerP_timeOfDay_Option8">
+				<Original>
+					Default
+				</Original>
+				<Russian>
+					По настройкам карты
+				</Russian>
+			</Key>
+			<Key ID="STR_SerP_viewdistance">
+				<Original>
+					Viewdistance
+				</Original>
+				<Russian>
+					Дальность видимости
+				</Russian>
+			</Key>
+			<Key ID="STR_SerP_weather">
+				<Original>
+					Weather
+				</Original>
+				<Russian>
+					Погода
+				</Russian>
+			</Key>
+			<Key ID="STR_SerP_weather_Option0">
+				<Original>
+					Clear
+				</Original>
+				<Russian>
+					Безоблачно
+				</Russian>
+			</Key>
+			<Key ID="STR_SerP_weather_Option1">
+				<Original>
+					Overcast
+				</Original>
+				<Russian>
+					Облачно
+				</Russian>
+			</Key>
+			<Key ID="STR_SerP_weather_Option2">
+				<Original>
+					Light Fog
+				</Original>
+				<Russian>
+					Туман
+				</Russian>
+			</Key>
+			<Key ID="STR_SerP_weather_Option3">
+				<Original>
+					Heavy Fog
+				</Original>
+				<Russian>
+					Густой туман
+				</Russian>
+			</Key>
+			<Key ID="STR_SerP_weather_Option4">
+				<Original>
+					Storm
+				</Original>
+				<Russian>
+					Гроза
+				</Russian>
+			</Key>
+			<Key ID="STR_SerP_weather_Option5">
+				<Original>
+					Default
+				</Original>
+				<Russian>
+					По настройкам карты
+				</Russian>
+			</Key>
+			<Key ID="STR_SerP_briefing_mode">
+				<Original>
+					Briefing ingame
+				</Original>
+				<Russian>
+					Брифинг ингейм
+				</Russian>
+			</Key>
+			<Key ID="STR_SerP_briefing_mode_Option0">
+				<Original>
+					Without briefing
+				</Original>
+				<Russian>
+					Без брифинга
+				</Russian>
+			</Key>
+			<Key ID="STR_SerP_briefing_mode_Option1">
+				<Original>
+					7 min
+				</Original>
+				<Russian>
+					7 минут
+				</Russian>
+			</Key>
+			<Key ID="STR_SerP_briefing_mode_Option2">
+				<Original>
+					10 min
+				</Original>
+				<Russian>
+					10 минут
+				</Russian>
+			</Key>
+			<Key ID="STR_SerP_briefing_mode_Option3">
+				<Original>
+					15 min
+				</Original>
+				<Russian>
+					15 минут
+				</Russian>
+			</Key>
+			<Key ID="STR_SerP_briefing_mode_Option4">
+				<Original>
+					No limit
+				</Original>
+				<Russian>
+					По готовности
+				</Russian>
+			</Key>
+			<Key ID="STR_SerP_loading">
+				<Original>
+					Loading
+				</Original>
+				<Russian>
+					Вход в игру
+				</Russian>
+			</Key>
+			<Key ID="STR_SerP_loading_Option0">
+				<Original>
+					Auto
+				</Original>
+				<Russian>
+					Авто
+				</Russian>
+			</Key>
+			<Key ID="STR_SerP_loading_Option1">
+				<Original>
+					Any
+				</Original>
+				<Russian>
+					Без ограничений
+				</Russian>
+			</Key>
+			<Key ID="STR_SerP_loading_Option2">
+				<Original>
+					Only group leaders
+				</Original>
+				<Russian>
+					Только командиры групп
+				</Russian>
+			</Key>
+			<Key ID="STR_SerP_endBriefing">
+				<Original>
+					End briefing
+				</Original>
+				<Russian>
+					Закончить брифинг
+				</Russian>
+			</Key>
+			<Key ID="STR_SerP_continueBriefing">
+				<Original>
+					Сontinue briefing
+				</Original>
+				<Russian>
+					Продолжить брифинг
+				</Russian>
+			</Key>
+			<Key ID="STR_SerP_outOfZone">
+				<Original>
+					You're leaving zone of briefing
+				</Original>
+				<Russian>
+					Вы покидаете зону брифинга
+				</Russian>
+			</Key>
+			<Key ID="STR_SerP_sorry">
+				<Original>
+					Sorry
+				</Original>
+				<Russian>
+					Мне очень жаль
+				</Russian>
+			</Key>
+			<Key ID="STR_SerP_endMission">
+				<Original>
+					End mission
+				</Original>
+				<Russian>
+					Завершение игры
+				</Russian>
+			</Key>
+			<Key ID="STR_SerP_On">
+				<Original>
+					ON
+				</Original>
+				<Russian>
+					Вкл.
+				</Russian>
+			</Key>
+			<Key ID="STR_SerP_Off">
+				<Original>
+					Off
+				</Original>
+				<Russian>
+					Выкл.
+				</Russian>
+			</Key>
+			<Key ID="STR_SerP_spectatorLimitations">
+				<Original>
+					Spectator limitations
+				</Original>
+				<Russian>
+					Ограничения спектатора
+				</Russian>
+			</Key>
+			<Key ID="STR_SerP_debug">
+				<Original>
+					Debug
+				</Original>
+				<Russian>
+					Отладка
+				</Russian>
+			</Key>
+			<Key ID="STR_SerP_unauthorisedCrew">
+				<Original>
+					You are not authorised to crew this vehicle!
+				</Original>
+				<Russian>
+					Вы не уполномочены управлять этой техникой!
+				</Russian>
+			</Key>
+			<Key ID="STR_SerP_UnauthorisedPlace">
+				<Original>
+					This place is not available for you!
+				</Original>
+				<Russian>
+					Вам не доступно это место!
+				</Russian>
+			</Key>
+			<Key ID="STR_SerP_UnauthorisedSide">
+				<Original>
+					Not available for your side!
+				</Original>
+				<Russian>
+					Недоступно для вашей стороны!
+				</Russian>
+			</Key>
+			<!-- сообщения при завершении миссии -->
+			<Key ID="STR_SerP_winCall">
+				<Russian>
+					В миссии победили %1
+				</Russian>
+				<Original>
+					%1 wins
+				</Original>
+			</Key>
+			<Key ID="STR_SerP_deadCall">
+				<Russian>
+					Все %1 погибли...
+				</Russian>
+				<Original>
+					All %1 KIA...
+				</Original>
+			</Key>
+			<Key ID="STR_SerP_missionEndAdmin">
+				<Russian>
+					Миссия завершена досрочно
+				</Russian>
+				<Original>
+					Mission interrupted
+				</Original>
+			</Key>
+			<!-- Фризтайм-->
+			<Key ID="STR_SerP_warbegins">
+				<Russian>
+					War begins
+				</Russian>
+				<Original>
+					War begins
+				</Original>
+			</Key>
+			<Key ID="STR_SerP_freeztimeCounter">
+				<Russian>
+					До конца брифинга осталось: %1
+				</Russian>
+				<Original>
+					Freeztime remaining: %1
+				</Original>
+			</Key>
+		</Container>
+		<Container ID="DBuildSys">
+			<!-- Основной интерфейс -->
+			<Key ID="STR_DBS_AMBuild">
+				<Original>Build(&lt;t color="#DDDD00"&gt;8&lt;/t&gt;) (cost %1 of %2 BPs)</Original>
+				<Russian>Установить(&lt;t color="#DDDD00"&gt;8&lt;/t&gt;) (цена %1 из %2 доступных)</Russian>
+			</Key>
+			<Key ID="STR_DBS_AMDist">
+				<Original>Adjust distance(&lt;t color="#DDDD00"&gt;3,4&lt;/t&gt;)</Original>
+				<Russian>Изменить расстояние(&lt;t color="#DDDD00"&gt;3,4&lt;/t&gt;)</Russian>
+			</Key>
+			<Key ID="STR_DBS_AMDist_Stop">
+				<Original>Stop adjusting distance</Original>
+				<Russian>Зафиксировать расстояние</Russian>
+			</Key>
+			<Key ID="STR_DBS_AMElev">
+				<Original>Adjust elevation(&lt;t color="#DDDD00"&gt;1,2&lt;/t&gt;)</Original>
+				<Russian>Изменить высоту(&lt;t color="#DDDD00"&gt;1,2&lt;/t&gt;)</Russian>
+			</Key>
+			<Key ID="STR_DBS_AMElev_Stop">
+				<Original>Stop adjusting elevation</Original>
+				<Russian>Зафиксировать высоту</Russian>
+			</Key>
+			<Key ID="STR_DBS_AMLand_BM">
+				<Original>"In building" mode(&lt;t color="#DDDD00"&gt;5&lt;/t&gt;)</Original>
+				<Russian>Режим "в здании"(&lt;t color="#DDDD00"&gt;5&lt;/t&gt;)</Russian>
+			</Key>
+			<Key ID="STR_DBS_AMLand_LM">
+				<Original>"At land" mode(&lt;t color="#DDDD00"&gt;5&lt;/t&gt;)</Original>
+				<Russian>Режим "на земле"(&lt;t color="#DDDD00"&gt;5&lt;/t&gt;)</Russian>
+			</Key>
+			<Key ID="STR_DBS_AMType">
+				<Original>Change fortification type(&lt;t color="#DDDD00"&gt;6&lt;/t&gt;)</Original>
+				<Russian>Выбрать тип укрепления(&lt;t color="#DDDD00"&gt;6&lt;/t&gt;)</Russian>
+			</Key>
+			<Key ID="STR_DBS_AMFlip">
+				<Original>Flip fortification direction(&lt;t color="#DDDD00"&gt;7&lt;/t&gt;)</Original>
+				<Russian>Повернунть на 180 градусов(&lt;t color="#DDDD00"&gt;7&lt;/t&gt;)</Russian>
+			</Key>
+			<Key ID="STR_DBS_MNoBPs">
+				<Original>Not enough BPs</Original>
+				<Russian>Недостаточно строительных очков</Russian>
+			</Key>
+			<Key ID="STR_DBS_MWrongMode">
+				<Original>This fortification could be placed in "at land" mode only</Original>
+				<Russian>Этот тип укрепления можно установить только в режиме "на земле"</Russian>
+			</Key>
+			<Key ID="STR_DBS_MWrongPos">
+				<Original>Cannot place here</Original>
+				<Russian>Нет опоры</Russian>
+			</Key>
+			<Key ID="STR_DBS_MAnotherFort">
+				<Original>Too close to another fortification</Original>
+				<Russian>Слишком близко к другим укреплениям</Russian>
+			</Key>
+			<Key ID="STR_DBS_SIMBuildingMode">
+				<Original>Toggle Building Mode(0)</Original>
+				<Russian>Вкл/выкл строит. режим(0)</Russian>
+			</Key>
+			<Key ID="STR_DBS_SIMAllowance">
+				<Original>Give Building Permission(9)</Original>
+				<Russian>Дать разреш. на строит.(9)</Russian>
+			</Key>
+		</Container>
 
-	<Key ID="STR_SerP_unauthorisedCrew">
-		<Original>
-		You are not authorised to crew this vehicle!
-		</Original>
-		<Russian>
-		Вы не уполномочены управлять этой техникой!
-		</Russian>
-	</Key>
-	<Key ID="STR_SerP_UnauthorisedPlace">
-		<Original>
-		This place is not available for you!
-		</Original>
-		<Russian>
-		Вам не доступно это место!
-		</Russian>
-	</Key>
-	<Key ID="STR_SerP_UnauthorisedSide">
-		<Original>
-		Not available for your side!
-		</Original>
-		<Russian>
-		Недоступно для вашей стороны!
-		</Russian>
-	</Key>
-<!-- сообщения при завершении миссии -->
-	<Key ID="STR_SerP_winCall">
-		<Russian>
-		В миссии победили %1
-		</Russian>
-		<Original>
-		%1 wins
-		</Original>
-	</Key>
-	<Key ID="STR_SerP_deadCall">
-		<Russian>
-		Все %1 погибли...
-		</Russian>
-		<Original>
-		All %1 KIA...
-		</Original>
-	</Key>
-	<Key ID="STR_SerP_missionEndAdmin">
-		<Russian>
-		Миссия завершена досрочно
-		</Russian>
-		<Original>
-		Mission interrupted
-		</Original>
-	</Key>
-<!-- Фризтайм-->
-	<Key ID="STR_SerP_warbegins">
-		<Russian>
-		War begins
-		</Russian>
-		<Original>
-		War begins
-		</Original>
-	</Key>
-	<Key ID="STR_SerP_freeztimeCounter">
-		<Russian>
-		До конца брифинга осталось: %1
-		</Russian>
-		<Original>
-		Freeztime remaining: %1
-		</Original>
-	</Key>
-    </Container>
-    <Container ID="DBuildSys">	
-<!-- Основной интерфейс -->
- 	<Key ID="STR_DBS_AMBuild">
-		<Original>Build(&lt;t color="#DDDD00"&gt;8&lt;/t&gt;) (cost %1 of %2 BPs)</Original>
-		<Russian>Установить(&lt;t color="#DDDD00"&gt;8&lt;/t&gt;) (цена %1 из %2 доступных)</Russian>
-	</Key> 
- 	<Key ID="STR_DBS_AMDist">
-		<Original>Adjust distance(&lt;t color="#DDDD00"&gt;3,4&lt;/t&gt;)</Original>
-		<Russian>Изменить расстояние(&lt;t color="#DDDD00"&gt;3,4&lt;/t&gt;)</Russian>
-	</Key> 
- 	<Key ID="STR_DBS_AMDist_Stop">
-		<Original>Stop adjusting distance</Original>
-		<Russian>Зафиксировать расстояние</Russian>
-	</Key> 
- 	<Key ID="STR_DBS_AMElev">
-		<Original>Adjust elevation(&lt;t color="#DDDD00"&gt;1,2&lt;/t&gt;)</Original>
-		<Russian>Изменить высоту(&lt;t color="#DDDD00"&gt;1,2&lt;/t&gt;)</Russian>
-	</Key> 
- 	<Key ID="STR_DBS_AMElev_Stop">
-		<Original>Stop adjusting elevation</Original>
-		<Russian>Зафиксировать высоту</Russian>
-	</Key> 
- 	<Key ID="STR_DBS_AMLand_BM">
-		<Original>"In building" mode(&lt;t color="#DDDD00"&gt;5&lt;/t&gt;)</Original>
-		<Russian>Режим "в здании"(&lt;t color="#DDDD00"&gt;5&lt;/t&gt;)</Russian>
-	</Key> 
- 	<Key ID="STR_DBS_AMLand_LM">
-		<Original>"At land" mode(&lt;t color="#DDDD00"&gt;5&lt;/t&gt;)</Original>
-		<Russian>Режим "на земле"(&lt;t color="#DDDD00"&gt;5&lt;/t&gt;)</Russian>
-	</Key> 
- 	<Key ID="STR_DBS_AMType">
-		<Original>Change fortification type(&lt;t color="#DDDD00"&gt;6&lt;/t&gt;)</Original>
-		<Russian>Выбрать тип укрепления(&lt;t color="#DDDD00"&gt;6&lt;/t&gt;)</Russian>
-	</Key> 
- 	<Key ID="STR_DBS_AMFlip">
-		<Original>Flip fortification direction(&lt;t color="#DDDD00"&gt;7&lt;/t&gt;)</Original>
-		<Russian>Повернунть на 180 градусов(&lt;t color="#DDDD00"&gt;7&lt;/t&gt;)</Russian>
-	</Key> 
- 	<Key ID="STR_DBS_MNoBPs">
-		<Original>Not enough BPs</Original>
-		<Russian>Недостаточно строительных очков</Russian>
-	</Key> 
- 	<Key ID="STR_DBS_MWrongMode">
-		<Original>This fortification could be placed in "at land" mode only</Original>
-		<Russian>Этот тип укрепления можно установить только в режиме "на земле"</Russian>
-	</Key> 
- 	<Key ID="STR_DBS_MWrongPos">
-		<Original>Cannot place here</Original>
-		<Russian>Нет опоры</Russian>
-	</Key> 
- 	<Key ID="STR_DBS_MAnotherFort">
-		<Original>Too close to another fortification</Original>
-		<Russian>Слишком близко к другим укреплениям</Russian>
-	</Key> 
- 	<Key ID="STR_DBS_SIMBuildingMode">
-		<Original>Toggle Building Mode(0)</Original>
-		<Russian>Вкл/выкл строит. режим(0)</Russian>
-	</Key> 
- 	<Key ID="STR_DBS_SIMAllowance">
-		<Original>Give Building Permission(9)</Original>
-		<Russian>Дать разреш. на строит.(9)</Russian>
-	</Key> 
-    </Container>
-    
-    
-    
-    
-    
-    
-    
-    
-	<Container ID="SerP_A3RU_Spectator">
-		<Key ID="STR_SerP_A3RU_Controls_Spectator">
-				<English>-= SPECTATOR CONTROLS =-&lt;br/&gt;&lt;t color='#FFFF00'&gt;H&lt;/t&gt; - Display this help&lt;br/&gt;&lt;t color='#FFFF00'&gt;M&lt;/t&gt; - Change map mode&lt;br/&gt;&lt;t color='#FFFF00'&gt;MAP CLICK&lt;/t&gt; - Teleport in freecam&lt;br/&gt;&lt;t color='#FFFF00'&gt;UNIT MAP CLICK&lt;/t&gt; - Unit camera (Internal\External)&lt;br/&gt;&lt;t color='#FFFF00'&gt;MOUSE WHEEL&lt;/t&gt; - Zoom in/Zoom out (External)&lt;br/&gt;&lt;t color='#FFFF00'&gt;RMB&lt;/t&gt; - Camera rotate (External && Freeview)&lt;br/&gt;&lt;t color='#FFFF00'&gt;A,D&lt;/t&gt; - Previous/Next unit&lt;br/&gt;&lt;t color='#FFFF00'&gt;1,2,3&lt;/t&gt; - Change camera mode&lt;br/&gt;&lt;t color='#FFFF00'&gt;N&lt;/t&gt; - NVG / Thermal Vision&lt;br/&gt;&lt;t color='#FFFF00'&gt;(2x) SHIFT+CTRL+APP KEY&lt;/t&gt; - End mission (Admin)
+		<Container ID="SerP_A3RU_Spectator">
+			<Key ID="STR_SerP_A3RU_Controls_Spectator">
+				<English>-= SPECTATOR CONTROLS =-&lt;br/&gt;&lt;t color='#FFFF00'&gt;H&lt;/t&gt; - Display this help&lt;br/&gt;&lt;t color='#FFFF00'&gt;M&lt;/t&gt; - Change map mode&lt;br/&gt;&lt;t color='#FFFF00'&gt;MAP CLICK&lt;/t&gt; - Teleport in freecam&lt;br/&gt;&lt;t color='#FFFF00'&gt;UNIT MAP CLICK&lt;/t&gt; - Unit camera (Internal\External)&lt;br/&gt;&lt;t color='#FFFF00'&gt;MOUSE WHEEL&lt;/t&gt; - Zoom in/Zoom out (External)&lt;br/&gt;&lt;t color='#FFFF00'&gt;RMB&lt;/t&gt; - Camera rotate (External &amp;&amp; Freeview)&lt;br/&gt;&lt;t color='#FFFF00'&gt;A,D&lt;/t&gt; - Previous/Next unit&lt;br/&gt;&lt;t color='#FFFF00'&gt;1,2,3&lt;/t&gt; - Change camera mode&lt;br/&gt;&lt;t color='#FFFF00'&gt;N&lt;/t&gt; - NVG / Thermal Vision&lt;br/&gt;&lt;t color='#FFFF00'&gt;(2x) SHIFT+CTRL+APP KEY&lt;/t&gt; - End mission (Admin)
 				</English>
 				<Russian>-= УПРАВЛЕНИЕ СПЕКТАТОРОМ =-&lt;br/&gt;&lt;t color='#FFFF00'&gt;H&lt;/t&gt; - Отображение данной справки&lt;br/&gt;&lt;t color='#FFFF00'&gt;M&lt;/t&gt; - Смена режима отображения карты&lt;br/&gt;&lt;t color='#FFFF00'&gt;MAP CLICK&lt;/t&gt; - Телепорт в Свободном режиме&lt;br/&gt;&lt;t color='#FFFF00'&gt;UNIT CLICK&lt;/t&gt; - Перемещение в игрока (Internal и External)&lt;br/&gt;&lt;t color='#FFFF00'&gt;КОЛЕСО МЫШИ&lt;/t&gt; - Приближение/Отдаление (External)&lt;br/&gt;&lt;t color='#FFFF00'&gt;ПКМ&lt;/t&gt; - Поворот камеры (External и Freeview)&lt;br/&gt;&lt;t color='#FFFF00'&gt;A,D&lt;/t&gt; - Переключение камеры между юнитами&lt;br/&gt;&lt;t color='#FFFF00'&gt;1,2,3&lt;/t&gt; - Смена камеры (Internal, External, Freeview)&lt;br/&gt;&lt;t color='#FFFF00'&gt;N&lt;/t&gt; - ПНВ / ТПВ&lt;br/&gt;&lt;t color='#FFFF00'&gt;(2x) SHIFT+CTRL+APP KEY&lt;/t&gt; - Завершение миссии (Admin)
 				</Russian>
-		</Key>
-	</Container>
+			</Key>
+		</Container>
 
-
-
-
-
-  </Package>
+	</Package>
 </Project>
