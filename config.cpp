@@ -3,9 +3,9 @@ class CfgPatches {
 	class SerP {
 		units[] = {};
 		weapons[] = {};
-		requiredVersion = 0.1;
+		requiredVersion = 1.0;
 		requiredAddons[] = {};
 
-		version = 1.4;
+		version = 2.0.0;
 	};
 };

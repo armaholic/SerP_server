@@ -1,0 +1,1 @@
+[] execVM "SerP\modules\endmission\endmission.sqf";

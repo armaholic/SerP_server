@@ -1,6 +1,6 @@
-#include "gui.hpp"
-// #include "spect\config.hpp"
-#include "buildsys\config.hpp"
+#include "serp_gui.hpp"
+#include "modules\buildsys\config.hpp"
+
 class CfgFunctions
 {
 	class SerP
