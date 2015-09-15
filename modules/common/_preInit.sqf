@@ -1,5 +1,5 @@
 
-SerP_isCrew = compile preprocessFileLineNumbers "SerP\modules\common\isCrew.sqf";
+//SerP_isCrew = compile preprocessFileLineNumbers "SerP\modules\common\isCrew.sqf";
 
 call compile preprocessFileLineNumbers "SerP\modules\common\markers.sqf";
 call compile preprocessFileLineNumbers "SerP\modules\common\message.sqf";

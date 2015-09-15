@@ -6,8 +6,10 @@ _cargoBoxes = _this select 3;
 //prepare functions
 _common_processor = {
 	_veh = _this;
-	clearWeaponCargo _veh;
-	clearMagazineCargo _veh;
+	clearWeaponCargoGlobal _veh;
+	clearMagazineCargoGlobal _veh;
+	clearItemCargoGlobal _veh;
+	clearBackpackCargoGlobal _veh;
 };
 
 if (_faction == "" && _loadout == "common") then {

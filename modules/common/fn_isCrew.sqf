@@ -12,12 +12,12 @@
 		2. - "east"/"west"/"guer"/"civ"/"" - проверка игрока на сторону (опционально)
 	
 	Примеры запуска в ините
-		_=[this,"driver","gunner"] execvm "SerP\common\isCrew.sqf";
-		_=[this,"driver","gunner"] execvm "SerP\common\isCrew.sqf";
-		_=[this,"driver","gunner","commander"] execvm "SerP\common\isCrew.sqf";
-		_=[this,"driver","gunner","commander"] execvm "SerP\common\isCrew.sqf";
-		_=[this,"driver","gunner","commander",weST] execvm "SerP\common\isCrew.sqf";
-		_=[this,"driver","gunner","commander","east"] execvm "SerP\common\isCrew.sqf";
+		_=[this,"driver","gunner"] execvm "SerP\common\fn_isCrew.sqf";
+		_=[this,"driver","gunner"] execvm "SerP\common\fn_isCrew.sqf";
+		_=[this,"driver","gunner","commander"] execvm "SerP\common\fn_isCrew.sqf";
+		_=[this,"driver","gunner","commander"] execvm "SerP\common\fn_isCrew.sqf";
+		_=[this,"driver","gunner","commander",weST] execvm "SerP\common\fn_isCrew.sqf";
+		_=[this,"driver","gunner","commander","east"] execvm "SerP\common\fn_isCrew.sqf";
 	
 */
 
@@ -75,7 +75,7 @@ fnc_inCrewFilter = {
 	_side = _this select 2;
 	_exit = false;
 	if (isnil {_vehicle getVariable "CREW_GETININDEX"}) then {
-		_vehicle setVariable ["CREW_GETININDEX",_type,true];
+		_vehicle setVariable ["CREW_GETININDEX", _type, true];
 	};
 
 	if !(local _unitToCheck) exitWith {};

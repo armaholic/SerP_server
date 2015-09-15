@@ -50,7 +50,7 @@ SerP_startposMarkerPrefix = "SerP_startposMarker";
 SerP_modulesAdd = getArray(missionConfigFile >> "SerP_const" >> "modulesAdd");
 SerP_modulesRemove = getArray(missionConfigFile >> "SerP_const" >> "modulesRemove");
 SerP_modulesDefault = call compile preprocessFileLineNumbers "SerP\serp_defaultModules.sqf";
-SerP_modules = ["common"]+(SerP_modulesDefault - SerP_modulesRemove + SerP_modulesAdd);
+SerP_modules = ["common"] + (SerP_modulesDefault - SerP_modulesRemove + SerP_modulesAdd);
 
 if (isServer) then {call SerP_processParams;};
 

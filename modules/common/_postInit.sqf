@@ -11,7 +11,7 @@ if (!isDedicated) then {
 	};
 	//проверяем не находится ли игрок в технике, если находится запускаем проверку его позиции
 	if (vehicle player != player && {!isNil {(vehicle player) getVariable "CREW_GETININDEX"}}) then {
-		[[(vehicle player), "", player], (vehicle player) getVariable "CREW_GETININDEX"] call fnc_inCrew
+		[[(vehicle player), "", player], (vehicle player) getVariable "CREW_GETININDEX"] call fn_isCrew
 	};
 
 	if (SerP_debugToggle == 1) then {
